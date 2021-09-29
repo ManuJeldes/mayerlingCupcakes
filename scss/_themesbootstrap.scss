@@ -1,0 +1,10 @@
+$custom-colors: (
+  "navFooter": #b24475,
+  "bg-sun": #ffea32,
+  "sky1": #00adcc,
+  "skydark": #49a2b2,
+  "purple": #ff107a7a
+);  
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

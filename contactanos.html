@@ -4,14 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./img/logo.png">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--css-->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Mayerling Cup & Cakes</title>
+    <title>Contacta a Mayerling cup & Cakes</title>
+
+    <meta name="description"  content="Contacta a Mayerling Cup & Cakes, envía lo que necesitas, adjunta tu foto, asi poder personalizar tu torta o cupcake">
+
+    <meta name="keywords" content="contacto, formulario, presupuesto, tortas, cupcakes, popcakes, Mayerling Cup & Cakes">
 
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/wow.min.js"></script>
@@ -23,7 +27,7 @@
   <body>
 
     <!--inicia nav-->
-
+    
     <nav class="navbar navbar-expand-md navbar-dark" style="">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -52,7 +56,7 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning" type="submit">Buscar</button>
+            <a class="btn btn-outline-warning" type="submit" href="error404.html">Buscar</a>
           </form>
         </div>
       </div>
@@ -64,115 +68,117 @@
     <!-- inicia header-->
 
     <header id="inicio" class=" bg-warning paginaPrincipal">
-      <h1 class="text-danger">Contáctanos</h1>
+      <h1 class="text-danger ms-3">Contáctanos</h1>
     </header>
 
     <!--cierra header-->
 
     <!--inicia forms-->
-    <form class="row m-3" style="background-image: url();"> 
-      <div class="row g-3">
-        <div class="col-lg-4 col-md-8">
-          <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" placeholder="First name" aria-label="Nombre">
+    
+    <form class="row m-3 d-flex" style=""> 
+        <div class="row">
+          <div class=" ms-1 col-lg-4 col-md-8 md-ms-5">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" placeholder="First name" aria-label="Nombre">
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <label for="Apellido">Apellido</label>
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Apellido">
+          </div>
         </div>
-        <div class="col-lg-4 col-md-8">
-          <label for="Apellido">Apellido</label>
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Apellido">
+        <div class=" row ms-1 me-1 col-lg-4 col-md-8">
+          <label for="formGroupExampleInput" class="form-label">Email</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mayerlingcupcakes@cakes.cl">
         </div>
-      </div>
-      <div class="mb-3 col-lg-4 col-md-8">
-        <label for="formGroupExampleInput" class="form-label">Email</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mayerlingcupcakes@cakes.cl">
-      </div>
-      <div class="mb-3 col-lg-4 col-md-8">
-        <label for="formGroupExampleInput2" class="form-label">Telefono</label>
-        <input type="Telefono" class="form-control" id="formGroupExampleInput2" placeholder="+56 9 xxxxxxxx">
-      </div>
+        <div class=" row col-lg-4 col-md-8">
+          <label for="formGroupExampleInput2" class="form-label">Telefono</label>
+          <input type="Telefono" class="form-control" id="formGroupExampleInput2" placeholder="+56 9 xxxxxxxx">
+        </div>
 
-      <div class="row col-6 m-2">
-        <label for="exampleDataList" class="form-label">Tu ciudad</label>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Elige tu ciudad</option>
-          <option value="1">Nogales</option>
-          <option value="2">Hijuelas</option>
-          <option value="3">La Calera</option>
-          <option value="4">La cruz</option>
-          <option value="5">Quillota</option>
-          <option value="6">San Pedro</option>
-          <option value="7">Limache</option>
-          <option value="8">Otra Cuidad</option>
-        </select>
-      </div>  
+        <div class="row col-6 ms-1">
+          <label for="exampleDataList" class="form-label">Tu ciudad</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Elige tu ciudad</option>
+            <option value="1">Nogales</option>
+            <option value="2">Hijuelas</option>
+            <option value="3">La Calera</option>
+            <option value="4">La cruz</option>
+            <option value="5">Quillota</option>
+            <option value="6">San Pedro</option>
+            <option value="7">Limache</option>
+            <option value="8">Otra Cuidad</option>
+          </select>
+        </div>  
 
-      <label for="formGroupExampleInput2" class="form-label pt-3">Que prefieres</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Tortas
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Cupcakes
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Pop cakes
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Me gusta todo!
-        </label>
-      </div>
+        <label for="formGroupExampleInput2" class="form-label pt-3">Que prefieres</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Tortas
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Cupcakes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Pop cakes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Me gusta todo!
+          </label>
+        </div>
+         
+
+        <div class="form-horizontal col-lg-8 col-md-8 col-sm-8 pt-3">
+          <textarea class="form-control" placeholder="Describe tu proyecto, luego adjunta una fotografía" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Describe tu solicitud</label>
+        </div>
        
-
-      <div class="form-floating col-8 pt-3">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Describe tu solicitud</label>
-      </div>
-     
-      <div class="row col-8">
-        <div class="input-group mb-3 pt-3">
-          <input type="file" class="form-control" id="inputGroupFile02">
-          <label class="input-group-text" for="inputGroupFile02">Subir</label>
+        <div class="row col-lg-8 col-md-8 col-sm-8">
+          <h6 class="mt-4">Adjunta tu fotografía</h6>
+          <div class="input-group mb-3 pt-1">
+            <input type="file" class="form-control" id="inputGroupFile02">           
+          </div>
         </div>
-      </div>
 
-      <div class="row m-3">
-        <input class="btn-outline-warning col-lg-2 col-md-4 col-sm-6 me-2" type="reset" value="Cancelar">
-        
-        <!-- Button trigger modal -->
-        <button type="button" value="Enviar" class="btn-outline-warning col-lg-2 col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
-         Enviar
-        </button>
+        <div class="row m-3">
+          <input class="btn-warning col-lg-2 col-md-4 col-sm-6 me-2" type="reset" value="Cancelar">
+          
+          <!-- Button trigger modal -->
+          <button type="button" value="Enviar" class="btn-warning col-lg-2 col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Enviar
+          </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Términos de contacto</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                Acepto que Mayerling Cup & Cakes me contacte y envíe promociones a mi email.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" value="Enviar" class="btn btn-primary">Acepto</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Términos de contacto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Acepto que Mayerling Cup & Cakes me contacte y envíe promociones a mi email.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" value="Enviar" class="btn btn-primary">Acepto</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  </form>
-  <!--termina forms-->
+    </form>
+    
+    <!--termina forms-->
 
 
    <!--comienza footer-->
@@ -184,10 +190,10 @@
       <div class="conteinerfooterall">
 
         <div class="conteinerbody row">
-         <div class="conteinerbody__colum1--size col-lg-3">
-          <h4 class="footer__titulo--size">Mas informacion de Mayerling Cup & Cakes</h4>
+          <div class="conteinerbody__colum1--size col-lg-3">
+           <h4 class="footer__titulo--size">Mas información de Mayerling Cup & Cakes</h4>
 
-          <p>Es una empresa familiar en donde todos aportan con sus talentos culinarios, nos dedicamos a la confeccion de tortas, cupckes y masas dulces, todo lo te imagines lo podemos volver realidad, tu paladar no se arrepentira. La gran impulsadora de esto es Mayerling una pastelera autodidacta y con mucho talento ubicados en la cuidad de Quillota</p>
+           <p>Es una empresa familiar en donde todos aportan con sus talentos culinarios, nos dedicamos a la confección de tortas, cupcakes y masas dulces, todo lo que te imagines lo podemos volver realidad, tu paladar no se arrepentira. La gran impulsadora de esto es Mayerling una pastelera autodidacta y con mucho talento ubicados en la cuidad de Quillota</p>
 
           </div class="row">
             <div class="conteinerbody__colum2--size col-lg-3">
