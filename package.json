@@ -1,7 +1,7 @@
 {
-  "name": "sass1",
+  "name": "sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto Final",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,15 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
-  }
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuJeldes/mayerlingCupcakes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ManuJeldes/mayerlingCupcakes/issues"
+  },
+  "homepage": "https://github.com/ManuJeldes/mayerlingCupcakes#readme"
 }
